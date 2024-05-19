@@ -1,0 +1,116 @@
+<html>
+<head>
+  <title>Online Pizza Order Form</title>
+
+</head>
+<!--BODY -->
+<body bgcolor="#E29638" text="white">
+	<h1 align="center"><u>Yummy Cakes</u></h1>
+	<table align="center">
+		<tr>
+			<td valign="bottom"><img src="chocolate.jpg" width=200 height=200> </td>
+			<td valign="bottom"><img src="anniversary.jpg" width=200 height=200 </td>
+			<td valign="bottom"><img src="childrens.jpg" width=200 height=200></td>
+			<td valign="bottom"><img src="mango.jpg" width=200 height=200></td>
+		</tr>
+		<tr>
+			<td ><h3 align="center">Chocolate Cake</h3></td>
+			<td><h3 align="center">Anniversary Cake</h3></td>
+			<td><h3 align="center">Childrens Cake</h3></td>
+			<td><h3 align="center">Mango Cake</h3></td>
+		</tr>
+	</table>
+	
+	<!--DIV -->
+	<div style="width:80%; margin:auto;">
+	
+	<!--FORM -->
+    <form method="post" name="forms" action="form-processing.php" >
+	
+	<!--PERSONAL INFORMATION -->
+          <fieldset>
+          <legend>Personal Information</legend>
+        <label>  First Name:</label> <input type="text" name="fname" size=25/>
+          <label>Last Name:</label> <input type="text" name="lname" size=25/>
+         <label>Mobile #:</label> <input type="text" name="mobile" size=25 />
+		 <label>Address: <textarea col=70 rows=1 name="address"></textarea></label>
+         
+        </fieldset>
+		
+		
+		<!--ORDER DETAILS -->
+        <fieldset>
+          <legend>Order Details</legend>
+          <select name="size">
+            <option>KG</option>
+            <option value="1">0.5</option>
+            <option value="2">1</option>
+            <option value="3">1.5</option>
+            <option value="4">2</option>
+            <option value="5">5</option>
+          </select>
+          <select name="Quantity" >
+		  <option >Select Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+          </select>
+		 <label>Delivery Date:</label><input type="date" name="date" />
+		  <label>Delivery Time:</label><input type="time" name="time" />
+		   <select name="payment">
+            <option>Select Payment Option</option>
+            <option value="1">Mobicash</option>
+            <option value="2">Bank Transfer</option>
+            <option value="3">Cash on Delivery</option>
+          </select>
+        </fieldset>
+        
+		<!--CAKES -->
+        <fieldset>
+          <legend>Cakes</legend>
+          <input type="radio" name="cakes" value="1" />Chocolate Cake
+          <input type="radio" name="cakes" value="2" />Strawberry Cake
+          <input type="radio" name="cakes" value="3" />Red Velvet Cake
+		  <input type="radio" name="cakes" value="4" />Mix Fruit Cake
+		  <input type="radio" name="cakes" value="5" />Black Forest Cake
+		  <input type="radio" name="cakes" value="6" />Mango Cake
+        </fieldset>
+		
+		<!--FLAVORS -->
+        <fieldset>
+          <legend>Flavors</legend>
+          <input type="radio" name="flavors" value="1" />Vanilla
+          <input type="radio" name="flavors" value="2" />Dark Chocolate
+          <input type="radio" name="flavors" value="3" />Earl Grey
+		  <input type="radio" name="flavors" value="4" />Caramel
+		  <input type="radio" name="flavors" value="5" />Almond
+		  <input type="radio" name="flavors" value="6" />Chocolate Stout
+		  <input type="radio" name="flavors" value="7" />Red Wine Chocolate
+		  <input type="radio" name="flavors" value="8" />Other(comment below)
+		</fieldset>
+		
+		
+		  
+		 
+		
+		<!--SPECIAL INSTRUCTIONS -->
+		
+        <fieldset>
+          <legend>Special Instructions</legend>
+          <textarea name="instructions" rows="3" cols="42"></textarea>
+        </fieldset>
+		
+		<!--BUTTONS -->
+		
+        <input type="submit" value="PLACE YOUR ORDER" />
+        <input type="reset" value="START OVER" />
+      </div>
+      
+       
+    
+  </form>
+  
+</body>
+
+</html>
